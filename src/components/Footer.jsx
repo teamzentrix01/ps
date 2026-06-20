@@ -18,10 +18,8 @@ export default function Footer() {
     <footer className="bg-[#111111] text-white pt-24 pb-10">
 
       <div className="container mx-auto px-8 md:px-12 lg:px-16">
-        {/* MAIN GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-10 pb-16 border-b border-white/10">
 
-          {/* BRAND */}
           <div className="lg:pr-8">
 
             <h2 className="text-4xl font-serif font-bold mb-6 tracking-wide">
@@ -36,7 +34,6 @@ export default function Footer() {
 
             </p>
 
-            {/* SOCIAL */}
             <div className="flex items-center gap-4 mt-8">
 
               {[
@@ -56,34 +53,32 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* QUICK LINKS */}
-<div className="lg:pl-6">
-  <h3 className="text-2xl font-semibold mb-7">
-    Quick Links
-  </h3>
+          <div className="lg:pl-6">
+            <h3 className="text-2xl font-semibold mb-7">
+              Quick Links
+            </h3>
 
-  <ul className="space-y-5 text-[15px]">
-    {[
-      { name: "Home", href: "/" },
-      { name: "Portfolio", href: "/portfolio" },
-      { name: "Services", href: "/services" },
-      { name: "Venues", href: "/venues" },
-      { name: "Decor", href: "/decor" }, // Change if you have a separate gallery page
-      { name: "Contact", href: "/get_quote" },
-    ].map((item) => (
-      <li key={item.name}>
-        <Link
-          href={item.href}
-          className="text-gray-400 hover:text-pink-400 transition duration-300"
-        >
-          {item.name}
-        </Link>
-      </li>
-    ))}
-  </ul>
-</div>
+            <ul className="space-y-5 text-[15px]">
+              {[
+                { name: "Home", href: "/" },
+                { name: "Portfolio", href: "/portfolio" },
+                { name: "Services", href: "/services" },
+                { name: "Venues", href: "/venues" },
+                { name: "Decor", href: "/decor" }, 
+                { name: "Contact", href: "/get_quote" },
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-gray-400 hover:text-pink-400 transition duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          {/* SERVICES */}
           <div>
 
             <h3 className="text-2xl font-semibold mb-7">
@@ -111,7 +106,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* CONTACT */}
           <div>
 
             <h3 className="text-2xl font-semibold mb-7">
@@ -178,7 +172,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* BOTTOM BAR */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-5 text-gray-500 text-sm">
 
           <p className="text-center md:text-left">

@@ -19,7 +19,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Bar */}
       <div className="border-b bg-white text-sm text-gray-700">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-2 sm:flex-row">
           <div className="flex items-center gap-2">
@@ -34,11 +33,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Main Navbar */}
       <nav className="sticky top-0 z-50 border-b bg-white shadow-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
           
-          {/* Logo */}
           <Link
             href="/"
             className="text-2xl font-bold tracking-wide text-pink-600 md:text-3xl"
@@ -46,7 +43,6 @@ export default function Navbar() {
             PS DECOR
           </Link>
 
-          {/* Desktop Menu */}
           <ul className="flex items-center gap-6 md:gap-8">
             {menuItems.map((item) => {
               const isActive = pathname === item.href;
@@ -63,7 +59,6 @@ export default function Navbar() {
                   >
                     {item.name}
 
-                    {/* Active Underline */}
                     {isActive && (
                       <span className="absolute left-0 bottom-0 h-[2px] w-full rounded-full bg-pink-600"></span>
                     )}
@@ -73,7 +68,6 @@ export default function Navbar() {
             })}
           </ul>
 
-          {/* CTA Button */}
           <Link
             href="/get_quote"
             className={`rounded-full px-5 py-2 text-sm font-medium shadow-md transition md:text-base ${

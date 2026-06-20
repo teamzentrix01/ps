@@ -7,7 +7,7 @@ export default function About() {
     <section className="bg-white py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-        {/* Left Content */}
+        
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             About <span className="text-pink-600">PS DECOR</span>
@@ -43,7 +43,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Right Image Section */}
         <div className="relative">
           <img
             src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac"
@@ -51,7 +50,6 @@ export default function About() {
             className="rounded-2xl shadow-lg w-full object-cover"
           />
 
-          {/* Floating Card */}
           <div className="absolute -bottom-6 -left-6 bg-white shadow-xl rounded-xl p-4 w-40">
             <p className="text-2xl font-bold text-pink-600">5+</p>
             <p className="text-sm text-gray-600">Years Experience</p>
