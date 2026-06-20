@@ -14,7 +14,7 @@ export default function About() {
           </h2>
 
           <p className="text-gray-600 leading-relaxed mb-6">
-            PS DECOR is a creative event and wedding décor brand dedicated to transforming
+            PS  decor is a creative event and wedding décor brand dedicated to transforming
             ordinary spaces into unforgettable experiences. With a passion for
             design, elegance, and detail, we bring your dream celebrations to life.
           </p>
